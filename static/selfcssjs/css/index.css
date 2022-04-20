@@ -1,0 +1,120 @@
+/* 通用式样 */
+body{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+}
+@font-face
+{
+font-family:jd;
+src: url('./fonts/icomoon.eot') format('embedded-opentype'),
+url('./fonts/icomoon.svg') format('svg'),
+url('./fonts/icomoon.ttf') format('truetype'),
+url('./fonts/icomoon.woff') format('woff'),
+}
+
+#匹配开头包括“icon-”的类和中间包括“icon-”的类
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: jd;
+    font-style: normal;
+}
+
+/* 通用式样 */
+
+
+/* 头部式样开始 */
+#jd_header{
+
+}
+
+#jd_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+#jd_header .top-bar .container .row>div+div{
+    border-left:1px solid #e0e0e0
+}
+#jd_header .top-bar .container .row .top-bar-1 a{
+
+}
+#jd_header .top-bar .container .row .top-bar-1 a img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -10px;
+    z-index: 999;
+}
+#jd_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+    z-index: 999;
+}
+.icon-phone::before{
+    content: '\e958';
+    font-size: 13px;
+}
+.icon-tel::before{
+    content: '\e942';
+    font-size: 13px;
+}
+
+#jd_header .navbar-jd{
+background-color: #fff;
+z-index: -10;
+margin-bottom: 0;
+}
+#jd_header .navbar-jd .navbar-brand{
+    height: 70px;
+    padding: 10px 15px;
+    
+}
+#jd_header .navbar-jd .navbar-nav a{
+    height: 70px;
+    line-height: 40px;
+    
+}
+#jd_header .navbar-jd .navbar-nav li.active a,
+#jd_header .navbar-jd .navbar-nav li a:hover{
+    background-color : transparent;
+    border-bottom: 2px solid #0AB4F7;
+
+}
+/* 头部式样结束 */
+
+/* 关于我们式样开始 */
+#jd_about{
+    padding: 20px 0;
+}
+#jd_about .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+#jd_about .row p{
+    line-height: 30px;
+    font-size: 15px;
+}
+/* 关于我们式样结束 */
+/* 产品特色式样开始 */
+#jd_product{
+    background-color: #f0f0f0;
+    padding: 30px 0;
+}
+#jd_product .nav{
+    font-size: 18px;
+}
+#jd_product .nav a{
+    color: #999;
+}
+#jd_product .nav li.active a{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #0AB4F7;
+    color: #000;
+}
+/*产品特色式样结束 */
