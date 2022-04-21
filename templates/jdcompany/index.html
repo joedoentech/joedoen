@@ -19,35 +19,6 @@
     <!-- 头部 -->
     <header id="jd_header">
         <!-- 头部的上部分开始 -->
-        <div class="top-bar hidden-sm hidden-xs text-center text-muted">
-            <div class="container">
-                <div class="row">
-                    <div class="top-bar-1 col-md-2">
-                        <a href="">
-                            <i class="icon-phone"></i>
-                            <span>关注微信</span>
-                            <span class="caret"></span>
-                            <img src="static/img/weixin.png" alt="" width="130px">
-                        </a>
-
-                    </div>
-                    <div class="top-bar-2 col-md-4">
-                        <i class="icon-tel"></i>
-                        <span>888-555-888（服务时间：9：00-21：00）</span>
-                    </div>
-                    <div class="top-bar-3 col-md-2">
-                        <a href="">校企合作</a>
-                        <a href="">培训师</a>
-                    </div>
-                    <div class="top-bar-4 col-md-4">
-                        <a class="btn btn-default btn-sm" href="#" role="button">注册</a>
-                        <a class="btn btn-default btn-sm" href="#" role="button">登录</a>
-                        <a class="btn btn-default btn-sm" href="#" role="button">直接访问云平台</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
         <!-- 头部的上部分结束 -->
         <!-- 头部的下部分开始 -->
         <nav class="navbar navbar-default navbar-static-top navbar-jd">
@@ -70,15 +41,18 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">关于我们 <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">课程介绍</a></li>
-                        <li><a href="#">热门课程</a></li>
-                        <li><a href="#">名师授课</a></li>
-                        <li><a href="#">课堂互动</a></li>
+                        <li><a href="#">产品与服务</a></li>
+                        <li><a href="#">项目解决方案</a></li>
+                        <li><a href="#">技术支持</a></li>
+                        <li><a href="#">投资者信息</a></li>
                         <li><a href="#">联系我们</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">云平台登录</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">中文</a></li>
+                        <li><a href="#">EN</a></li>
 
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -99,8 +73,8 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
+        <div class="carousel-inner jd_carouselimg" role="listbox">
+            <div class="item active ">
                 <img src="./static/img/lb00-500.jpg" alt="...">
 
             </div>
@@ -181,7 +155,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="product1">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-8 pd_left">
                                     <!-- 第一部分 -->
                                     <div id="pd_one_1" class="media">
                                         <div class="media-left">
@@ -191,8 +165,8 @@
                                             </a>
                                         </div>
                                         <div class="media-body">
-                                            <h4 class="media-heading">体育馆投光灯具</h4>
-                                            ...
+                                            <h4 class="media-heading text-muted" style="padding-top: 40px;">AC220V
+                                                1000W</br>体育馆投光灯具</h4>
                                         </div>
                                     </div>
                                     <!-- 第二部分 -->
@@ -209,8 +183,9 @@
                                     </h3>
                                     <!-- 第四部分 -->
                                     <div id="pd_one_4">
-                                        <button class="btn btn-default" type="submit">联系我们</button>
-                                        <button class="btn btn-default" type="submit">更多产品</button>
+                                        <button class="btn btn-default lg-btn btn-primary" style="margin-right: 15px;"
+                                            type="submit">联系我们</button>&nbsp;
+                                        <button class="btn btn-default lg-btn btn-primary" type="submit">更多产品</button>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -230,7 +205,7 @@
                                         class="img-responsive img-rounded hidden-xs hidden-sm"
                                         style="background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;">
                                 </div>
-                                <div class="col-md-8">
+                                <div id="pb_two_1" class="col-md-8">
                                     <h3>安全用电，是产品质量控制的重要方面</h3>
                                     <p class="lead">
                                         过去这些年，我们在安全用电方面，进行了卓有成效的探索。过去这些年，我们在安全用电方面，进行了卓有成效的探索。过去这些年，我们在安全用电方面，进行了卓有成效的探索。过去这些年，我们在安全用电方面，进行了卓有成效的探索。过去这些年，我们在安全用电方面，进行了卓有成效的探索。
@@ -244,7 +219,7 @@
                             <div class="row"></div>
                             <div class="col-md-8">
                                 <h2 class="text-danger"><strong>高杆灯最大的问题在于</strong></h2>
-                                <p>方便、快捷、易于维护的高杆灯系统 </p>
+                                <p style="margin: 15px 0; font-size: 20px;">方便、快捷、易于维护的高杆灯系统 </p>
                                 <div class="badge">近300支高杆|30个单位给予好评</div>
                             </div>
                             <div class="col-md-4">
@@ -261,19 +236,232 @@
     </section>
     <!-- /产品特色 -->
 
-    <!-- 热门课程 -->
-    <section id="jd_hot">热门课程</section>
-    <!-- /热门课程 -->
+    <!-- 热销产品 -->
+    <section id="jd_hot">
+        <div class="title text-center">
+            <h2>热销产品</h2>
+            <img src="./static/img/tubiao.png" alt="" class="img-responsive">
+        </div>
+        <!-- 本节内容部分 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 hot_pd">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-responsive img-circle img-thumbnail" width="100"
+                                    src="./static/img/hotpd-01.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                防爆灯具
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具,
+                                在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            详细参数
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hot_pd">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-responsive img-circle img-thumbnail" width="100"
+                                    src="./static/img/hotpd-01.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                防爆灯具
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具,
+                                在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            详细参数
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hot_pd">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-responsive img-circle img-thumbnail" width="100"
+                                    src="./static/img/hotpd-01.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                防爆灯具
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具,
+                                在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            详细参数
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hot_pd">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-responsive img-circle img-thumbnail" width="100"
+                                    src="./static/img/hotpd-01.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                防爆灯具
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具,
+                                在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            详细参数
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hot_pd">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-responsive img-circle img-thumbnail" width="100"
+                                    src="./static/img/hotpd-01.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                防爆灯具
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具,
+                                在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            详细参数
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hot_pd">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-responsive img-circle img-thumbnail" width="100"
+                                    src="./static/img/hotpd-01.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <span class="text-danger">【热】</span>
+                                防爆灯具
+                            </h4>
+                            <p class="text-muted" style="margin-top: 10px;">在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具,
+                                在密闭的气体与粉尘环境，防爆灯具是必不可少的照明器具</p>
+                        </div>
+                        <div class="media-right text-danger">
+                            详细参数
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /热销产品 -->
 
     <!-- 友情链接 -->
-    <section id="jd_link">友情链接</section>
+    <section id="jd_link">
+        <div class="title text-center">
+            <h2>友情连接</h2>
+            <img src="./static/img/tubiao.png" alt="" class="img-responsive">
+        </div>
+        <ul class="logos1">
+            <li><a href=""><img src="./static/img/jd-link/china huadian.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="./static/img/jd-link/cscec.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="./static/img/jd-link/datang.png" alt="" height="30px"></a></li>
+            <li><a href=""><img src="./static/img/jd-link/guojianengyuan.png" alt="" height="30px"></a></li>
+
+        </ul>
+        <ul class="logos2">
+            <li><a href=""><img src="./static/img/jd-link/huarun.png" alt="" ></a></li>
+            <li><a href=""><img src="./static/img/jd-link/chinahuaneng.png" alt="" ></a></li>
+            <li><a href=""><img src="./static/img/jd-link/spic.png" alt="" ></a></li>
+            <li><a href=""><img src="./static/img/jd-link/jdlogo.png" alt="" ></a></li>            
+            <li><a href=""><img src="./static/img/jd-link/tmall.png" alt="" ></a></li>
+            
+        </ul>
+    </section>
     <!-- /友情链接 -->
 
     <!-- 尾部 -->
-    <section id="jd_footer">尾部</section>
-    <!-- /尾部 -->
+    <section id="jd_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 one">
+                    <div class="row">
+                        <ul class="col-md-6">
+                            <li><a href="">管理平台登录</a></li>
+                            <li><a href="">照明灯具</a></li>
+                            <li><a href="">配电柜(箱）</a></li>
+                            <li><a href="">广场高杆灯</a></li>
+                        </ul>
+                        <ul class="col-md-6">
+                            <li><a href="">用电监测系统</a></li>
+                            <li><a href="">智能控制系统</a></li>
+                            <li><a href="">光伏发电系统</a></li>
+                            <li><a href="">体育管理系统</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 two  hidden-sm hidden-xs">
+                    <p>公司地址：河北省秦皇岛市海港区金湾环路4-2-303</p>
+                    <p>业务邮箱：market@jeodoen.cn</p>
+                    <p>业务电话：+86-335-158-3335-2761</p>
+                </div>
+                <div class="col-md-4 three hidden-sm hidden-xs">
+                    <h5>关注我们</h5>
+                    <div class="three1"><a href="">
+                            <img src="./static/img/jd-link/weixin.png" alt="" height="40px">
+                        </a>
+                        <a href="">
+                            <img src="./static/img/jd-link/weibo.png" alt="" height="40px" >
+                        </a>
+                    </div>
 
-    <a href="{% url 'test'%}">点此测试</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /尾部 -->
+    <!-- 版权ICP信息 -->
+    <section id="jd_copyright">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                中国河北 © 交点科技（秦皇岛）有限公司 2021 – 2022 冀ICP备2021024287号-1
+               </div>
+               <div class="col-md-6">                  
+                <div>
+                    <img src="./static/img/jd-link/beian.png" alt="">
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13030202003291" 
+                    style="display:inline-block;text-decoration:none;height:15px;line-height:15px;">
+                    <img src="" style="float:left;"/>
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                        冀公网安备 13030202003291号</p></a>
+                </div>
+            
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- /版权ICP信息 -->
 
     <!-- 全站依赖的JS文件包开始 -->
     <script type="text/javascript" src="./static/jquery360/jquery-3.6.0.js"></script>

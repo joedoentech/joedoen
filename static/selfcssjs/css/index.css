@@ -1,46 +1,60 @@
 /* 通用式样 */
-body{
-    
+body {
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000;
 }
-@font-face
-{
-font-family:jd;
-src: url('./fonts/icomoon.eot') format('embedded-opentype'),
-url('./fonts/icomoon.svg') format('svg'),
-url('./fonts/icomoon.ttf') format('truetype'),
-url('./fonts/icomoon.woff') format('woff'),
+
+@font-face {
+    font-family: jd;
+    src: url('./fonts/icomoon.eot') format('embedded-opentype'),
+        url('./fonts/icomoon.svg') format('svg'),
+        url('./fonts/icomoon.ttf') format('truetype'),
+        url('./fonts/icomoon.woff') format('woff'),
 }
 
-#匹配开头包括“icon-”的类和中间包括“icon-”的类
-[class^="icon-"],
-[class*=" icon-"]{
+#匹配开头包括“icon-”的类和中间包括“icon-”的类 [class^="icon-"],
+[class*=" icon-"] {
     font-family: jd;
     font-style: normal;
+}
+
+#jd_about,
+#jd_hot,
+#jd_link {
+    padding: 20px 0;
+}
+
+#jd_about .title,
+#jd_hot .title,
+#jd_link .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 /* 通用式样 */
 
 
 /* 头部式样开始 */
-#jd_header{
+#jd_header {}
 
-}
-
-#jd_header .top-bar{
+#jd_header .top-bar {
     height: 40px;
     line-height: 39px;
     border-bottom: 1px solid #e0e0e0;
 
 }
-#jd_header .top-bar .container .row>div+div{
-    border-left:1px solid #e0e0e0
-}
-#jd_header .top-bar .container .row .top-bar-1 a{
 
+#jd_header .top-bar .container .row>div+div {
+    border-left: 1px solid #e0e0e0
 }
-#jd_header .top-bar .container .row .top-bar-1 a img{
+
+#jd_header .top-bar .container .row .top-bar-1 a {}
+
+#jd_header .top-bar .container .row .top-bar-1 a img {
     display: none;
     position: absolute;
     left: 50%;
@@ -48,73 +62,204 @@ url('./fonts/icomoon.woff') format('woff'),
     margin-top: -10px;
     z-index: 999;
 }
-#jd_header .top-bar .container .row .top-bar-1 a:hover img{
+
+#jd_header .top-bar .container .row .top-bar-1 a:hover img {
     display: block;
     z-index: 999;
 }
-.icon-phone::before{
+
+.icon-phone::before {
     content: '\e958';
     font-size: 13px;
 }
-.icon-tel::before{
+
+.icon-tel::before {
     content: '\e942';
     font-size: 13px;
 }
 
-#jd_header .navbar-jd{
-background-color: #fff;
-z-index: -10;
-margin-bottom: 0;
+#jd_header .navbar-jd {
+    background-color: #fff;
+    z-index: -10;
+    margin-bottom: 0;
 }
-#jd_header .navbar-jd .navbar-brand{
+
+#jd_header .navbar-jd .navbar-brand {
     height: 70px;
     padding: 10px 15px;
-    
+
 }
-#jd_header .navbar-jd .navbar-nav a{
+
+#jd_header .navbar-jd .navbar-nav a {
     height: 70px;
     line-height: 40px;
-    
+
 }
+
 #jd_header .navbar-jd .navbar-nav li.active a,
-#jd_header .navbar-jd .navbar-nav li a:hover{
-    background-color : transparent;
+#jd_header .navbar-jd .navbar-nav li a:hover {
+    background-color: transparent;
     border-bottom: 2px solid #0AB4F7;
 
 }
+
 /* 头部式样结束 */
 
 /* 关于我们式样开始 */
-#jd_about{
-    padding: 20px 0;
-}
-#jd_about .title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-}
-#jd_about .row p{
+
+#jd_about .row p {
     line-height: 30px;
     font-size: 15px;
 }
+
 /* 关于我们式样结束 */
 /* 产品特色式样开始 */
-#jd_product{
+#jd_product {
     background-color: #f0f0f0;
     padding: 30px 0;
 }
-#jd_product .nav{
+
+#jd_product .nav {
     font-size: 18px;
 }
-#jd_product .nav a{
+
+#jd_product .nav a {
     color: #999;
 }
-#jd_product .nav li.active a{
+
+#jd_product .nav li.active a {
     border: none;
     background-color: transparent;
     border-bottom: 2px solid #0AB4F7;
     color: #000;
 }
+
+#jd_product .container .row .tab-content {
+    padding-top: 15px;
+}
+
+#jd_product .pd_left {
+    padding: 20px 0;
+}
+
+#pd_one_1 {
+    margin: 15px 0;
+}
+
+#pd_one_2 {
+    background-color: transparent;
+}
+
+#pd_one_4 {
+    margin: 20px 0;
+}
+
+#jd_product #pb_two_1 {
+    padding: 100px;
+}
+
+#jd_product #pb_two_1 h3 {
+    margin: 20px;
+}
+
 /*产品特色式样结束 */
+/*热门产品式样开始 */
+#jd_hot .hot_pd {
+    padding: 15px 10px;
+}
+
+#jd_hot .hot_pd .media-left {
+    width: 20%;
+}
+
+#jd_hot .hot_pd .media-body {
+    width: 60%;
+    vertical-align: middle;
+}
+
+#jd_hot .hot_pd .media-right {
+    width: 20%;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+/*热门产品式样结束 */
+
+/* 友情链接开始 */
+#jd_link .logos1,
+#jd_link .logos2 {
+    list-style: none;
+    text-align: center;
+}
+
+#jd_link .logos1 li,
+#jd_link .logos2 li {
+    display: inline-block;
+    padding: 20px 30px;
+
+}
+
+#jd_link .logos1 li a img,
+#jd_link .logos2 li a img{
+    height: 30px;
+}
+
+/* 友情链接结束 */
+/* 尾部footer开始 */
+#jd_footer {
+    width: 100%;
+    height: 200px;
+    background: url(ftimg.png) no-repeat center;
+    font-size: 15px;
+    color: #fff;
+    padding: 20px 10px;
+    background-size: cover;
+}
+
+#jd_footer ul {
+    list-style: none;
+
+}
+
+#jd_footer .one,
+#jd_footer .two {
+    list-style: none;
+    border-right: 1px solid #666;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#jd_footer .one li {
+    line-height: 40px;
+
+
+}
+
+#jd_footer .one li a {
+    color: #fff;
+}
+
+#jd_footer .three {
+    padding: 10px 50px;
+    height: 180px;
+
+}
+
+#jd_footer .three a{
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* 尾部footer结束 */
+/*  版权ICP信息开始  */
+#jd_copyright {
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+/* 版权ICP信息结束  */
